@@ -25,7 +25,7 @@ Cleaned the dataset, handled hidden missing values, engineered new features like
 
 **P2 Modeling**
 
-Trained and compared three classification models: Logistic Regression as a baseline, Random Forest, and XGBoost. Given the class imbalance (26.5% churn rate), I used F1-score and Recall as the main evaluation metrics instead of accuracy.
+Trained and compared three classification models: Logistic Regression as a baseline, Random Forest, and XGBoost. Given the class imbalance (26.5% churn rate), I used F1-score and Recall as the main evaluation metrics.
 
 ## Key Findings
 
