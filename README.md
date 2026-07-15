@@ -8,7 +8,7 @@ Predicting which telecom customers are likely to cancel their service using mach
 
 ## About
 
-One of my first end-to-end data science projects. I worked with a Kaggle dataset of 7,043 telecom customers to figure out what makes people cancel their service and build a model that can predict it.
+One of my first data science projects. I worked with a Kaggle dataset of 7,043 telecom customers to figure out what makes people cancel their service and build a model that can predict it.
 
 ## Notebooks
 
