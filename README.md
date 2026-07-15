@@ -5,7 +5,6 @@ Predicting which telecom customers are likely to cancel their service using mach
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat)
 
 ## About
 
@@ -13,23 +12,33 @@ One of my first end-to-end data science projects. I worked with a Kaggle dataset
 
 ## Notebooks
 
-| | Notebook | Status |
-|--|----------|--------|
-| P1 | EDA & Preprocessing | ✅ Done |
-| P2 | Modeling | 🔄 Coming soon |
+| | Notebook | Description |
+|--|----------|-------------|
+| P1 | `01_Exploratory_Data_Analysis.ipynb` | Data cleaning, feature engineering and EDA |
+| P2 | `02_Modeling.ipynb` | Model training, evaluation and feature importance |
 
-## Main Takeaways from the Analysis
+## What I Did
 
-Contract type turned out to be the biggest factor. Month-to-month customers churn at 43% while two-year contract customers barely churn at all (3%). Fiber optic customers also leave at a surprisingly high rate (42%), and electronic check users churn 3x more than people on automatic payments.
+**P1 — EDA & Preprocessing**
 
-## Models (P2)
+Cleaned the dataset, handled hidden missing values, engineered new features like `tenure_segment`, `total_services` and `avg_monthly_charges`, and explored how each variable relates to churn through univariate and multivariate analysis.
 
-Logistic Regression, Random Forest and XGBoost. Using F1-score and Recall as main metrics since only 26.5% of customers churned.
+**P2 — Modeling**
+
+Trained and compared three classification models: Logistic Regression as a baseline, Random Forest, and XGBoost. Given the class imbalance (26.5% churn rate), I used F1-score and Recall as the main evaluation metrics instead of accuracy.
+
+## Key Findings
+
+Contract type is the strongest predictor of churn. Month-to-month customers churn at 43% while two-year contract customers churn at only 3%, a 14x difference.
+
+The first year is the critical retention window. Most customers who leave do so within their first 10 months. If they make it past that point they tend to stay.
+
+Fiber optic customers churn at 42%, nearly double the DSL rate. This points to pricing or service quality issues in that segment.
+
+Electronic check users churn at 3x the rate of customers on automatic payments. Automatic payments create friction to cancel, electronic check does not.
 
 ## Dataset
 
 [Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
-## Install
-
-pip install pandas numpy seaborn matplotlib scikit-learn xgboost kagglehub
+7,043 customers, 21 features, binary classification target.
