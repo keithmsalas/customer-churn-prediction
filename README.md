@@ -19,17 +19,17 @@ One of my first end-to-end data science projects. I worked with a Kaggle dataset
 
 ## What I Did
 
-**P1 — EDA & Preprocessing**
+**P1 EDA & Preprocessing**
 
 Cleaned the dataset, handled hidden missing values, engineered new features like `tenure_segment`, `total_services` and `avg_monthly_charges`, and explored how each variable relates to churn through univariate and multivariate analysis.
 
-**P2 — Modeling**
+**P2 Modeling**
 
 Trained and compared three classification models: Logistic Regression as a baseline, Random Forest, and XGBoost. Given the class imbalance (26.5% churn rate), I used F1-score and Recall as the main evaluation metrics instead of accuracy.
 
 ## Key Findings
 
-Contract type is the strongest predictor of churn. Month-to-month customers churn at 43% while two-year contract customers churn at only 3%, a 14x difference.
+Contract type is the strongest predictor of churn. Month-to-month customers churn at 43% while two-year contract customers churn at only 3%, that's a big difference.
 
 The first year is the critical retention window. Most customers who leave do so within their first 10 months. If they make it past that point they tend to stay.
 
