@@ -35,7 +35,7 @@ The first year is the critical retention window. Most customers who leave do so 
 
 Fiber optic customers churn at 42%, nearly double the DSL rate. This points to pricing or service quality issues in that segment.
 
-Electronic check users churn at 3x the rate of customers on automatic payments. Automatic payments create friction to cancel, electronic check does not.
+Customers on electronic check churn at triple the rate of those on auto-pay likely because auto-pay creates passive lock-in. Canceling means taking an extra step, and many customers simply don't.
 
 ## Dataset
 
